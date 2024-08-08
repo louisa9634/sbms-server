@@ -27,7 +27,10 @@ Read more from [this blog](https://linuxize.com/post/how-to-create-users-in-linu
 - Add someone to root group: `sudo usermod -aG sudo username`
 - Create new group: `addgroup yhlab`
 
-
+## add user (new version)
+- sudo useradd -m newuser
+- sudo usermod -g yhlab newuser
+- sudo passwd newuser
 ## Set the size limit for home directory for all users
 - Aim: 5GB by default
 - Too difficult to implemented (`/home` is not partitioned out from the system disc)
